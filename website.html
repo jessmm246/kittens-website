@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hehehehehe</title>
+  <style>
+    /* CSS for styling */
+    body {
+      background: url('pink_hearts_background.jpg') no-repeat center center fixed; /* Pink hearts background */
+      background-color: rgb(238, 171, 211);
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .response-container {
+      width: 300px;
+      padding: 20px;
+      background-color: #eb90c8a5;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 50px auto; /* Center the box horizontally and add space from the top */
+      text-align: center;
+    }
+
+    .response-container img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px; /* Adjust spacing between image and title */
+    }
+
+    .response-container input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+
+    .response-container button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .screenshot-response {
+      color: #fff; /* White text color */
+      margin-top: 20px; /* Adjust spacing from the response box */
+    }
+  </style>
+</head>
+<body>
+  <div class="response-container">
+    <img src="https://media.tenor.com/CC1VPnwBVMMAAAAj/gianbortion-cat.gif" alt="Heart Image">
+    <h2>Song Response</h2>
+    <input type="text" id="responseInput" placeholder="Type your response...">
+    <p class="screenshot-response">Screenshot Response</p>
+  </div>
+
+  <script>
+    function sendEmail() {
+      var response = document.getElementById('responseInput').value;
+      // Send the response to a certain email address using Ajax or form submission
+      // Here, we simulate sending the response by logging it to the console
+      console.log('Response sent:', response);
+    }
+  </script>
+</body>
+</html>
